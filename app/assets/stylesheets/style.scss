@@ -1,0 +1,52 @@
+// @import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+body {
+	margin: 0;
+	 }
+
+h1 {
+	margin: 0;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.nav {
+	height: 70px;
+	width:100%;
+	background-color: #75B3CA;
+	padding: 10px;
+}
+
+.container {
+	margin: 0;
+	max-width: 960px;
+	width: 100%;
+}
+
+.logo {
+	float: left;
+	width: 85px;
+}
+
+.menu {
+	display: inline-block;
+	float: right;
+	width: 300px;
+	padding-top: 13px;
+}
+
+.menu > li {
+	display: inline-block;
+	font-size: 20px;
+	padding: 10px;
+}
+
+.title-wrapper {
+		padding-top: 10px;
+	}
