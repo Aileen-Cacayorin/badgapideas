@@ -33,6 +33,7 @@ gem 'jquery-ui-rails', '~> 5.0.5'
 gem 'bootstrap', '~> 4.0.0'
 gem "slim-rails"
 gem "font-awesome-rails"
+gem 'devise'
 
 
 # Use Redis adapter to run Action Cable in production

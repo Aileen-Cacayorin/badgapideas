@@ -1,12 +1,9 @@
-h1 Listing projects
+h1 Project Ideas
 
-table
+table.table.table-borderd
   thead
     tr
       th Title
-      th Description
-      th Notes
-      th
       th
       th
 
@@ -14,9 +11,6 @@ table
     - @projects.each do |project|
       tr
         td = project.title
-        td = project.description
-        td = project.notes
-        td = link_to 'Show', project
         td = link_to 'Edit', edit_project_path(project)
         td = link_to 'Destroy', project, data: { confirm: 'Are you sure?' }, method: :delete
 
