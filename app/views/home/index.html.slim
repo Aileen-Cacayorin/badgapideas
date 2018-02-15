@@ -1,14 +1,4 @@
-nav.nav
-  .container
-    .logo
-      = image_tag "herbie.png"
-    ul.menu
-      li
-        a href="file:///Users/natashabelak-berger/Desktop/gapideas/index.html"  Home
-      li
-        = link_to 'Projects', projects_path
-      li
-        = link_to 'Submit Your Idea', new_project_path
+
 header
   h1.header-title Dev Day
   h3.header-subtitle Where gappers great ideas come to life
@@ -23,20 +13,21 @@ section.works
     h3.section-title.images Projects
     .column
       a href="http://highfive.gapintelligence.com" target="_blank"
-        img alt="highfive" src="assets/images/highfive.png" /
+        = image_tag "highfive.png"
     .column
       a href="http://goldenticket.gapintelligence.com" target="_blank"
-        img alt="ticket" src="assets/images/goldenticket.png" /
+        = image_tag "goldenticket.png"
+
   .container
     .column
       a href="http://storhaus.gapintelligence.com" target="_blank"
-        img alt="house" src="assets/images/storhaus.png" /
+        = image_tag "storhaus.png"
     .column
       a href="file:///Users/natashabelak-berger/Desktop/gapideas/projects.html" target="_blank"
-        img alt="more" src="assets/images/andmore.png" /
+        = image_tag "andmore.png"
 section.ideas
   .container
     .intro
       h3.ideas-title Do you have an idea you want a dev to check out?
     .intro.right
-      a.submit-button href="file:///Users/natashabelak-berger/Desktop/gapideas/submit.html"  Submit Here
+      .submit-button = link_to 'Submit Here', new_project_path
