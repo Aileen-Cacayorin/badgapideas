@@ -1,19 +1,19 @@
-h1 Project Ideas
+.container
+  .row
+    h1 Dev Day Project Ideas
+  .row
+    table.table.table-bordered
+      thead
+        tr
+          th Title
+          th Status
+          th
+          th
 
-table.table.table-bordered
-  thead
-    tr
-      th Title
-      th
-      th
-
-  tbody
-    - @projects.each do |project|
-      tr
-        td = project.title
-        td = link_to 'Edit', edit_project_path(project)
-        td = link_to 'Destroy', project, data: { confirm: 'Are you sure?' }, method: :delete
-
-br
-
-= link_to 'New Project', new_project_path
+      tbody
+        - @projects.each do |project|
+          tr
+            td = link_to project.title, project_path(project)
+            td = project.status || "New"
+            td = link_to 'Edit', edit_project_path(project)
+            td = link_to 'Delete', project, data: { confirm: 'Are you sure?' }, method: :delete
