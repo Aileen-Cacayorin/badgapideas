@@ -35,6 +35,8 @@ gem "slim-rails"
 gem "font-awesome-rails"
 gem 'devise'
 
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
@@ -51,6 +53,7 @@ group :development, :test do
   gem 'launchy'
   gem 'pry'
   gem 'shoulda-matchers'
+  gem 'dotenv-rails', '~> 2.2', '>= 2.2.1'
 end
 
 group :development do
